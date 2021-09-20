@@ -1,19 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="style.css" rel="stylesheet">
+  <style>  
+  .c{
+  width: 512px;
+  height: 512px;
+  background-color: #1d057f;
+  position: relative;
+  }
+  #s {
+  width: 512px;
+  height: 512px;
+  background-color:  #ffd21f;
+}
+
+.p{
+  background-color: #ffd21f;
+  clip-path: circle(160px at 50% 50%);
+}
+
+.ri {
+  position: absolute;
+  top: 248px;
+  left: 18px;
+  width: 470px;
+  height: 31px;
+  background: #eab409;
+  border-radius: 50px;
+  transform: rotate(
+195deg);
+}
+
+.o{
+  position: absolute;
+  background: #f7c407;
+  border-radius: 50%;
+}
+
+.t {
+  
+  top: 143px;
+  left: 173px;
+  width: 50px;
+  height: 50px;
+}
+
+.l{
+  top: 123px;
+  right: 65px;
+  width: 130px;
+  height: 130px;
+}
+
+.b {
+  top: 303px;
+  left: 233px;
+  width: 90px;
+  height: 90px;
+}
+
+.r{
+  top: 203px;
+  left: 68px;
+  width: 110px;
+  height: 110px;
+}
+</style> 
 </head>
 <body>
-  <div id="saturn">
-    <div class="planet-bg-top"></div>
-    <div class="planet-bg-top-left"></div>
-    <div class="rings"></div>
-    <div class="planet-bg-bottom"></div>
-    <div class="planet-bg-bottom-left"></div>
+  <div class='c'>
+    <div id="s" class="p">
+      <div class="o t"></div>
+      <div class="o l"></div>
+      <div class="o b"></div>
+      <div class="o r"></div>
+    </div>
+    <div class="ri"></div>
   </div>
 </body>
 </html>
